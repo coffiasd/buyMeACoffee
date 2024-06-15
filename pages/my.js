@@ -15,7 +15,7 @@ export default function MyPage() {
     return (
         <div className="min-h-screen" data-theme="wireframe">
             <Head>
-                <title>My page</title>
+                <title>MyPage</title>
                 <meta name="description" content="" />
                 <meta name="keywords" content="" />
                 <link rel="icon" href="/favicon.ico" />

@@ -37,13 +37,15 @@ export default function MyList() {
         <>
             <OnchainKitProvider apiKey="jcnq7au1b3d30RJrCD1g_EhHxrhFn3q1" chain={base}>
             <h1 className='my-5 font-bold'>My Supports List</h1>
+
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                     <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
                         <tr>
-                            <th scope="col" className="px-6 py-3">
+                            {/* <th scope="col" className="px-6 py-3">
                                 Pid
-                            </th>
+                            </th> */}
                             <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">
                                 Support
                             </th>
@@ -63,19 +65,22 @@ export default function MyList() {
                     </thead>
                     <tbody>
 
+                            {/* <tr>
+                                <td className="d-flex justify-content-center">
+                                    <button className="btn btn-square loading"></button>
+                                </td>
+                            </tr> */}
+                        
                        {rows.map((item, index) => (
                         <tr className="border-b border-gray-200 dark:border-gray-700" key={index}>
-                            <td className="px-6 py-4">
+                            {/* <td className="px-6 py-4">
                                {item.pid}
-                            </td>
+                            </td> */}
                             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
                                 
                                     <div className="flex h-10 items-center space-x-4">
                                         <Avatar address={item.support} showAttestation />
                                         <div className="flex flex-col text-sm">
-                                            <b>
-                                                <Name address={item.support}  />
-                                            </b>
                                             <Name address={item.support}  showAddress />
                                         </div>
                                     </div>
@@ -88,7 +93,8 @@ export default function MyList() {
                                 {item.message}
                             </td>
                             <td className="px-6 py-4">
-                                <button className="btn btn-xs btn-success">{item.state}</button>
+                                   {item.state == 'charge:confirmed' ? <button className="btn btn-xs btn-success">{item.state}</button> : <button className="btn btn-xs btn-warning">{item.state}</button>}
+                                
                             </td>
 
                             <td className="px-6 py-4">
@@ -99,8 +105,11 @@ export default function MyList() {
                         
                     </tbody>
                 </table>
-
             </div>
+                
+                {rows.length == 0 && <div className='flex mt-10'>
+                    <button className="m-auto btn btn-square loading"></button>
+                </div>}
 
                 <div className="mt-5 join float-right">
                     <button className="join-item btn">«</button>

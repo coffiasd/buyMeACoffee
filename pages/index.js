@@ -61,7 +61,7 @@ export default function Home() {
         <div className="hero-content text-center flex flex-col">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Fund your creative work</h1>
-            <p className="py-6 text-xl font-normal leading-normal mt-0 mb-2">buy me a coffee using crypto</p>
+            <p className="py-6 text-xl font-normal leading-normal mt-0 mb-2">Accept support. Start a membership. Setup a shop. It is easier than you think.</p>
           </div>
 
           <div className="flex flex-col mt-5">

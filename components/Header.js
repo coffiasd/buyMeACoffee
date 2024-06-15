@@ -19,19 +19,11 @@ export default function Header() {
             <div className="flex-1 ml-3 text-gray-50">
                 <ul className='flex flex-row justify-between gap-6'>
                     <li><a className='text-yellow-400' href="#"><FaCoffee size="1.7rem" /></a></li>
-                    <li><a className={styles.leftToRight} href="https://twitter.com/coffiasd"><FaTwitter size="1rem" className='m-0.5' />TWITTER</a></li>
+                    <li><a className={styles.leftToRight} href="https://twitter.com/coffiasse"><FaTwitter size="1rem" className='m-0.5' />TWITTER</a></li>
                     <li><a className={styles.leftToRight} href="https://github.com/coffiasd"><FaGithub size="1rem" className='m-0.5' />GITHUB</a></li>
                     <li><a className={styles.leftToRight} href="#"><FaYoutube size="1rem" className='m-0.5' />YOUTUBE</a></li>
                 </ul>
             </div>
-
-            {/* <div className="navbar-end">
-                {isConnected ?
-                    (<><button className="btn btn-sm btn-info ml-3 normal-case" onClick={openAccountModal}>Profile</button><button className="btn btn-sm btn-error ml-3 normal-case " onClick={openChainModal}>Chain</button></>)
-                    :
-                    (<button className="btn btn-sm btn-error ml-3 normal-case" onClick={openConnectModal}>connect wallet</button>)
-                }
-            </div> */}
         </div >
     )
 }
