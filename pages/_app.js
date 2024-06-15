@@ -47,7 +47,7 @@ const Local = {
 
 const queryClient = new QueryClient();
 
-const chains = [Local, sepolia];
+const chains = [base];
 
 const config = getDefaultConfig({
   appName: 'My RainbowKit App',

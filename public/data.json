@@ -1,0 +1,9 @@
+{
+  "name": "The Human Fund",
+  "description": "Money For People",
+  "pricing_type": "fixed_price",
+  "local_price": {
+    "amount": "10.00",
+    "currency": "USD"
+  }
+}

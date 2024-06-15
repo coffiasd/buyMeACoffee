@@ -2,7 +2,7 @@
   position: relative;
   display: inline-flex;
   font-size: 0.8rem;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 .leftToRight::after {
   content: "";
@@ -11,12 +11,19 @@
   height: 1px;
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -8px;
   background: #ffd641;
   transition: all 0.3s ease-in-out;
 }
 .leftToRight:hover::after {
   width: 100%;
+}
+
+.leftToRight2 {
+  position: relative;
+  display: inline-flex;
+  font-size: 1rem;
+  margin-top: 6px;
 }
 
 .footerHover:hover {
