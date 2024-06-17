@@ -84,7 +84,7 @@ export default function View() {
 
     useEffect(() => {
         getUserInfo();
-    }, [])
+    })
 
     return (
         <div className="min-h-screen" data-theme="wireframe">
