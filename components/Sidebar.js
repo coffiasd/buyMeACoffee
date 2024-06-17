@@ -34,7 +34,7 @@ export default function Sidebar() {
         <aside className="absolute hidden flex-col w-64 h-full px-4 py-8 overflow-y-auto border-r rtl:border-r-0 rtl:border-l top-0 left-0 md:flex lg:flex bg-primary-content">
 
             <div className="m-auto text-cyan-50">
-                <Link href='' className={styles.leftToRight2}><FaCoffee size="1.6rem" className='m-1 cursor-pointer text-yellow-400' /></Link>
+                <Link href='/' className={styles.leftToRight2}><FaCoffee size="1.6rem" className='m-1 cursor-pointer text-yellow-400' /></Link>
             </div>
 
             <div className="flex flex-col justify-between flex-1 mt-6">
