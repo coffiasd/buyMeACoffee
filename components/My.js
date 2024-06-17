@@ -115,7 +115,7 @@ export default function MyDash() {
                                     </button>
                                 </div>
 
-                                <div className="tooltip" data-tip="fulfill portfolio to view">
+                                <div className="tooltip" data-tip="fill in portfolio to view">
                                     {created ?
                                         <button onClick={viewPage} className="btn btn-xs rounded-lg">
                                             <FaShareSquare className='mx-1' size=".7rem" />

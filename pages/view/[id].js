@@ -47,7 +47,7 @@ export default function View() {
 
         let data = JSON.stringify({
             "local_price": {
-                "amount": '0.0001',
+                "amount": amt,
                 "currency": "usd"
             },
             "pricing_type": "fixed_price",
@@ -133,7 +133,7 @@ export default function View() {
 
 
                                 <div className='my-5'>
-                                    <textarea className="textarea textarea-bordered w-full" placeholder="Say something to creator" value={msg} onChange={e => { setMsg(e.target.value) }} ></textarea>
+                                    <textarea className="textarea textarea-bordered w-full" placeholder="Say something to the creator" value={msg} onChange={e => { setMsg(e.target.value) }} ></textarea>
                                 </div>
 
 

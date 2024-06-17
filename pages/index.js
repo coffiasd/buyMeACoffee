@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import React from "react";
 import { Alert } from '../components/alert.jsx';
 import axios from 'axios';
+import Image from 'next/image'
 
 const Header = dynamic(() => import('../components/Header'), {
   ssr: false,
@@ -69,6 +70,10 @@ export default function Home() {
             className={"py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-yellow-400 hover:shadow-yellow-md transition-all outline-none "}>
             Start My Page
         </button>
+          </div>
+
+          <div className='flex'>
+            <Image src="https://raw.githubusercontent.com/coffiasd/images/main/202406151619999.png" width='1200' height='500' alt=""/>  
           </div>
         </div>
 
